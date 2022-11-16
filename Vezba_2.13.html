@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Simple Page</title>
+</head>
+<body>
+	<h1>Simple HTML Page</h1>    
+    	<p>
+    	This is a very simple HTML page.
+    	</p>
+
+	<p>It's about as basic as they come. It has:<p>
+
+	<ul>
+		<li>An H1 Tag</li>
+		<li>Two paragraphs</li>
+		<li>An unordered list</li>
+	</ul>
+    <form name="form" onsubmit="return login()">
+        User name:<br>
+    <input type="text" name="userName">
+    <input type="submit" value="submit">
+    </form>
+	<script type = text/javascript>
+		var userName;
+        var newUser;
+        function login(){
+            userName = "Peter";
+        if( userName ===  "Peter"){
+        alert("Welcome" +" "+ userName + " you are the right user!");
+            return true;
+            }else if (userName !==  "Peter"){
+        alert("Oh,no"+" "+ userName +"-You are not the correct user!");
+        return false;
+        }
+        }
+        login();
+	</script>
+</body>
+</html>
